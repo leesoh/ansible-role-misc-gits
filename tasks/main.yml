@@ -1,0 +1,30 @@
+---
+- name: Clone SimplyEmail
+  become: true
+  git:
+    repo: https://github.com/killswitch-GUI/SimplyEmail.git
+    dest: "{{ misc_git_location }}/SimplyEmail"
+
+- name: Clone Veil Framework
+  become: true
+  git:
+    repo: https://github.com/Veil-Framework/Veil.git
+    dest: "{{ misc_git_location }}/Veil"
+
+- name: Clone PSAmsi
+  become: true
+  git:
+    repo: https://github.com/cobbr/PSAmsi.git
+    dest: "{{ misc_git_location }}/PSAmsi"
+
+- name: Clone PowerSploit
+  become: true
+  git:
+    repo: https://github.com/PowerShellMafia/PowerSploit.git
+    dest: "{{ misc_git_location }}/PowerSploit"
+
+- name: Clone LinkedInt
+  become: true
+  git:
+    repo: https://github.com/vysec/LinkedInt.git
+    dest: "{{ misc_git_location }}/LinkedInt"
